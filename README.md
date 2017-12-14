@@ -4,7 +4,7 @@
 <p>App created by Jan Pancíř - www.janpancir.com</p>
 
 <p>Deployed under MIT license</p>
-
+<p></p>
 <p><strong>Czech / Česky</strong></p>
 <p>Sudoku generátor pro zrakově postižené.</p>
 <p>Připravila firma Petr Provazník - čárové lasery</p>
