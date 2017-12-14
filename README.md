@@ -1,13 +1,13 @@
 # SudokuGenerator
-Sudoku generator for visually impaired people
-Prepared by Petr Provaznik - Carove Lasery
-App created by Jan Pancíř - www.janpancir.com
+<p>Sudoku generator for visually impaired people</p>
+<p>Prepared by Petr Provaznik - Carove Lasery</p>
+<p>App created by Jan Pancíř - www.janpancir.com</p>
 
-Deployed under MIT license
+<p>Deployed under MIT license</p>
 
-<p>Czech / Česky</p>
-Sudoku generátor pro zrakově postižené.
-Připravila firma Petr Provazník - čárové lasery
-Aplikaci vytvoříl Jan Pancíř - www.janpancir.com
+<p><strong>Czech / Česky</strong></p>
+<p>Sudoku generátor pro zrakově postižené.</p>
+<p>Připravila firma Petr Provazník - čárové lasery</p>
+<p>Aplikaci vytvoříl Jan Pancíř - www.janpancir.com</p>
 
-Publikováno pod MIT licencí
+<p>Publikováno pod MIT licencí</p>
