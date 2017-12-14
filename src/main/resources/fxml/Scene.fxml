@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="516.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.janpancir.sudokugenerator.FXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pane_main" prefHeight="557.0" prefWidth="479.0" style="-fx-background-color: white;">
+          <children>
+              <Button fx:id="btn_generate" layoutX="218.0" layoutY="305.0" onAction="#handleButtonAction" onMouseReleased="#btn_generateClick" prefHeight="32.0" prefWidth="195.0" text="Generovat">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="26.0" prefHeight="126.0" prefWidth="428.0" text="SUDOKU" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="84.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="105.0" prefHeight="66.0" prefWidth="422.0" text="GENERATOR" textAlignment="CENTER">
+               <font>
+                  <Font size="65.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combobox_difficulty" layoutX="218.0" layoutY="230.0" prefHeight="25.0" prefWidth="195.0" />
+            <Line endX="100.0" layoutX="138.0" layoutY="183.0" startX="-100.0" stroke="#a8a8a8" strokeWidth="3.0" />
+            <Label layoutX="68.0" layoutY="196.0" text="počet sudoku:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="230.0" text="obtížnost:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combobox_sudokuCount" layoutX="218.0" layoutY="196.0" prefHeight="25.0" prefWidth="195.0" />
+            <Line endX="100.0" layoutX="341.0" layoutY="183.0" startX="-100.0" stroke="#a8a8a8" strokeWidth="3.0" />
+            <Button fx:id="btn_show" layoutX="168.0" layoutY="411.0" mnemonicParsing="false" onMouseReleased="#btn_showClick" prefHeight="32.0" prefWidth="100.0" text="Zobrazit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="341.0" layoutY="351.0" startX="-100.0" stroke="#a8a8a8" strokeWidth="3.0" />
+            <Line endX="100.0" layoutX="138.0" layoutY="351.0" startX="-100.0" stroke="#a8a8a8" strokeWidth="3.0" />
+            <Label fx:id="label_result" layoutX="44.0" layoutY="368.0" prefHeight="24.0" prefWidth="386.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_save" layoutX="42.0" layoutY="411.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" text="Uložit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_generate1" layoutX="218.0" layoutY="265.0" onAction="#handleButtonAction" onMouseReleased="#btn_settingsClick" prefHeight="32.0" prefWidth="195.0" text="Nastavení vzhledu">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_print" layoutX="292.0" layoutY="411.0" mnemonicParsing="false" onMouseReleased="#btn_printClick" prefHeight="32.0" prefWidth="140.0" text="Vytisknout">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="17.0" layoutY="479.0" text="Pro zrakově postižené připravila firma Petr Provazník - čárové lasery" />
+            <Label layoutX="80.0" layoutY="528.0" text="Aplikaci vytvořil Jan Pancíř - www.janpancir.com" />
+            <Label layoutX="152.0" layoutY="500.0" text="petr-provaznik@volny.cz">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="135.0" layoutY="465.0" startX="-100.0" stroke="#b5b5b5" strokeWidth="3.0" />
+            <Line endX="100.0" layoutX="338.0" layoutY="465.0" startX="-100.0" stroke="#b5b5b5" strokeWidth="3.0" />
+          </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_settings" prefHeight="454.0" prefWidth="479.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle fx:id="line_preview" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="126.0" layoutX="194.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="91.0" />
+            <Label layoutX="95.0" layoutY="217.0" prefHeight="16.0" prefWidth="142.0" text="barva číslic:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_saveSettings" layoutX="147.0" layoutY="396.0" onAction="#handleButtonAction" onMouseReleased="#btn_saveSettingsClick" prefHeight="32.0" prefWidth="185.0" text="uložit a zavřít">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ColorPicker fx:id="colorPicker_font" layoutX="233.0" layoutY="217.0" onAction="#colorPicker_font_ColorChanged" />
+            <Label fx:id="font_preview" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" text="8" textAlignment="CENTER">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="150.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider_fontSize" layoutX="233.0" layoutY="311.0" max="150.0" min="80.0" prefHeight="16.0" prefWidth="173.0" value="140.0" />
+            <ColorPicker fx:id="colorPicker_line" layoutX="233.0" layoutY="261.0" onAction="#colorPicker_line_ColorChanged" />
+            <Label layoutX="95.0" layoutY="261.0" prefHeight="16.0" prefWidth="142.0" text="barva linek:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="307.0" prefHeight="16.0" prefWidth="142.0" text="velikost číslic:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
