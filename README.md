@@ -5,7 +5,7 @@ App created by Jan Pancíř - www.janpancir.com
 
 Deployed under MIT license
 
-<Czech>
+Czech / Česky
 Sudoku generátor pro zrakově postižené.
 Připravila firma Petr Provazník - čárové lasery
 Aplikaci vytvoříl Jan Pancíř - www.janpancir.com
